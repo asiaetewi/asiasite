@@ -1,0 +1,16 @@
+
+{% extends 'music/base.html' %}
+{%  block head %}<title>profile</title>
+{% endblock %}
+{% block body %}
+    <br/><br/>
+
+<div class="container">
+    <h1>profile</h1>
+<p>first name:{{ user.email }}</p>
+<p>first name:{{ user.userprofile.city }}</p>
+<p>last name:</p>
+<p>email</p>
+</div>
+
+{% endblock%}

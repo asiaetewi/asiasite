@@ -1,0 +1,32 @@
+{% extends 'music/base.html' %}
+{% block body %}
+
+
+
+
+
+    <div class="albums-container container-fluid ">
+
+
+    <!-- Albums -->
+    <div class="row">
+        <div class="col-md-12  column is-offset-6 is-6">
+
+            <h3>{{ city_weather.city }} Current weather</h3>
+        </div>
+
+
+<ul>
+        <div class="col-sm-12 col-lg-2">
+                    <div class="thumbnail">
+                                    {{ city_weather.city }}
+
+<img src="http://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="Image">
+                        <div class="caption">
+                                        <span class="subtitle">{{ city_weather.temperature }}° F</span>
+
+                            <h4>{{ city_weather.description }}</h4>
+                        </div>
+
+        </div></div></ul></div></div>
+{% endblock %}
